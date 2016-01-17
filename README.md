@@ -31,4 +31,4 @@ It works out of the box **on every single hosting, vps and cloud providers**. Th
 
 ## Credits
 
-Based on the [work of Isaac Bythewood](https://github.com/pjperez/docker-minecraft) to create a very simple Minecraft server image for Docker.
+Based on the [work of Isaac Bythewood](https://github.com/overshard/docker-minecraft) to create a very simple Minecraft server image for Docker.
