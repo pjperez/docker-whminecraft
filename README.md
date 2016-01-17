@@ -1,6 +1,4 @@
 # docker-whminecraft
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 A very simple way of getting a Minecraft server that all your friends can connect to, powered by Wormhole Network. There's no need to know networking or open ports on any firewalls.
 
@@ -8,9 +6,9 @@ A very simple way of getting a Minecraft server that all your friends can connec
 2. Connect your and your friend's machines to your hub in Wormhole Network with the SoftEther client: [Windows](https://wormhole.zendesk.com/hc/en-gb/articles/206613029), [Linux](https://wormhole.zendesk.com/hc/en-gb/articles/207287085).
 3. Play by using **direct connect** and Wormhole's assigned IP address for the server
 
-(http://i.imgur.com/CIKCgEB.png)
+![Minecraft server](http://i.imgur.com/CIKCgEB.png)
 
-(http://i.imgur.com/bknjgUR.png)
+![Minecraft server 2](http://i.imgur.com/bknjgUR.png)
 
 
 
