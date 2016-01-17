@@ -1,0 +1,36 @@
+#!/bin/bash
+# -----------------------------------------------------------------------------
+# docker-whminecraft /start script
+#
+# Authors: Isaac Bythewood (original docker-minecraft), Pedro Perez (docker-wormhole)
+# Updated: 16th Jan. 2016
+# -----------------------------------------------------------------------------
+
+# Start the VPN client daemon
+./vpnclient start
+
+# Wait 2s and connect to the local vpnclient daemon with vpncmd
+sleep 2s
+./vpncmd /CLIENT 127.0.0.1:5555 /IN:linuxconfig
+
+# Get a new IP address
+echo "Acquiring IP address..."
+dhclient vpn_wormhole
+echo "IP address acquired!"
+
+if [ ! -f /data/minecraft_server.jar ]
+then
+    curl "https://s3.amazonaws.com/Minecraft.Download/versions/1.8.8/minecraft_server.1.8.8.jar" -o /data/minecraft_server.jar
+fi
+
+if [ ! -f /data/eula.txt ]
+then
+    echo "eula=true" > /data/eula.txt
+fi
+
+echo "This is your server's IP address, please take note:"
+ip -4 a show vpn_wormhole | grep inet | awk '{print $2}' | cut -f1 -d"/"
+
+read -p "Press [Enter] to start Minecraft..."
+
+cd /data/; /usr/bin/java -Xmx2G -jar minecraft_server.jar nogui
