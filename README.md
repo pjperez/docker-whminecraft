@@ -32,9 +32,3 @@ already created before running `mkdir -p /mnt/docker`.
 ## Credits
 
 Based on the [work of Isaac Bythewood](https://github.com/pjperez/docker-minecraft) to create a very simple Minecraft server image for Docker.
-=======
-Docker image that connects to Wormhole's overlay network and starts a Minecraft server
->>>>>>> d2e84348a35fa4ac8c268a7c26f2b8755cc82cad
-=======
-Docker image that connects to Wormhole's overlay network and starts a Minecraft server
->>>>>>> d2e84348a35fa4ac8c268a7c26f2b8755cc82cad
