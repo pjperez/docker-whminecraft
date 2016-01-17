@@ -23,7 +23,7 @@ A very simple way of getting a Minecraft server that all your friends can connec
 7. Play multiplayer Minecraft by using **direct connect** and Wormhole's assigned IP address for the server
 ![Minecraft server 2](http://i.imgur.com/bknjgUR.png)
 
-The Minecraft server will show how you are connected through the overlay network:
+The Minecraft server will show clients connected through the overlay network:
 
 ![Server logs](http://i.imgur.com/FFkfe65.png)
 
