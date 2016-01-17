@@ -27,7 +27,7 @@ The Minecraft server will show clients connected through the overlay network:
 
 ![Server logs](http://i.imgur.com/FFkfe65.png)
 
-It works out of the box. There's no other configuration to be done, anywhere.
+It works out of the box **on every single hosting, vps and cloud providers**. There's no other configuration to be done, anywhere.
 
 ## Credits
 
